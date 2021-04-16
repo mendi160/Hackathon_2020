@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "324954843292",
+    "project_id": "optimal-travel-2020",
+    "storage_bucket": "optimal-travel-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324954843292:android:aa3e297afeb0fd7f872559",
+        "android_client_info": {
+          "package_name": "com.example.optimaltravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324954843292-5t7q6fmb16mvu2oqmip5tecscaogil94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvNNPUU9PQxkK8pN8YK_67ARIqCQY7Wrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324954843292-5t7q6fmb16mvu2oqmip5tecscaogil94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

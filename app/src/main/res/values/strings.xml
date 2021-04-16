@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Optimal Travel</string>
+    <string name="stopText">הוסף נקודת עצירה</string>
+    <string name="calculateText">חשב מסלול אופטימלי</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="pointInMap">קח אותי לשם</string>
+</resources>

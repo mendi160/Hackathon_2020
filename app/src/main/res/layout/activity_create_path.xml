@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:columnCount="1"
+    android:orientation="vertical"
+    android:rowCount="3"
+    tools:context=".UI.CreatePath">
+
+
+    <ListView
+        android:id="@+id/lvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/quantum_brown100"
+        android:cacheColorHint="@color/purple_700"
+
+        app:layout_constraintBottom_toTopOf="@+id/bAddStop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="16dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/bAddStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:ems="10"
+        android:onClick="googleAutoComplete"
+        android:text="@string/stopText"
+        android:textSize="20dp"
+        app:backgroundTint="@color/quantum_bluegrey900"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginBottom="88dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bAddStop"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ad" />
+
+    <Button
+        android:id="@+id/bCalculateRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="runParse"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/calculateText"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp"
+        app:backgroundTint="@color/quantum_googgreen700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="יעדים"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="7dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bLogout"
+        android:layout_width="42dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="4dp"
+        android:onClick="logOut"
+        android:background="@android:drawable/ic_lock_power_off"
+        app:layout_constraintBottom_toTopOf="@+id/lvAddress"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
